@@ -1,0 +1,26 @@
+<view wx:if="{{show}}">
+    <view class="bg-gray"></view>
+    <view class="content-box">
+        <view class="per-list">
+            <view class="per-item" bindtap="store">
+                <image src="../../image/icon06.png" class="fl per-icon" mode="widthFix"></image>
+                <image src="../../image/icon09.png" class="fr per-ri" mode="widthFix"></image>
+                <view>所属门店</view>
+            </view>
+            <view class="per-item" bindtap="detail" wx:if="{{info.good_number != 0}}">
+                <image src="../../image/icon07.png" class="fl per-icon" mode="widthFix"></image>
+                <image src="../../image/icon09.png" class="fr per-ri" mode="widthFix"></image>
+                <view>购买的套餐</view>
+            </view>
+            <view class="per-item" bindtap="record">
+                <image src="../../image/icon08.png" class="fl per-icon" mode="widthFix"></image>
+                <image src="../../image/icon09.png" class="fr per-ri" mode="widthFix"></image>
+                <view>购买/使用记录</view>
+            </view>
+        </view>
+        <view class="pos-btn">
+            <view class="pos-t">当前账号:{{info.nickname}}</view>
+            <view class="btn btn-green" bindtap="exit">退出</view>
+        </view>
+    </view>
+</view>

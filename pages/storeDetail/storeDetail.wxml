@@ -1,0 +1,17 @@
+<view wx:if="{{show}}">
+    <view class="bg-gray"></view>
+    <view class="content-box">
+        <view class="box-detail">
+            <image src="{{info.go_image}}"></image>
+            <view class="box-p">
+                <rich-text>
+                    {{info.go_content}}
+                </rich-text>
+            </view>
+        </view>
+        <view class="store-btn" bindtap="buy">
+            <view class="fr" style="font-weight: normal" wx:if="{{type == 'store'}}">购买</view>
+            <view class="fl">售价:</view>¥{{info.go_price}}
+        </view>
+    </view>
+</view>

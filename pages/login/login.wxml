@@ -1,0 +1,27 @@
+<view class="logo-img" wx:if="{{showPage}}">
+    <image src="../../image/bg02.png" mode="widthFix"></image>
+</view>
+<view class="content-box" wx:if="{{showPage}}">
+    <view class="logo-title" wx:if="{{loginCode}}">验证码登录</view>
+    <view class="logo-title" wx:else>密码登录</view>
+    <view class="box-input">
+        <image src="../../image/icon01.png" class="fl"></image>
+        <input type="number" class="input-text1" placeholder="请填写手机号" bindinput="bindphone"/> 
+    </view>
+    <view class="box-input" wx:if="{{loginCode}}">
+        <image src="../../image/icon05.png" class="fl"></image>
+        <view bindtap="send" class="code-btn {{time == 60 ? '' : 'gray'}}">{{time == 60 ? '发送验证码' : time+'s后重发'}}</view>
+        <input type="number" class="input-text3" placeholder="请填写验证码" bindinput="bindcode"/>
+    </view>
+    <view class="box-input" wx:else>
+        <image src="../../image/icon02.png" class="fl"></image>
+        <image src="../../image/icon03.png" class="fr"></image>
+        <input type="number" class="input-text2" placeholder="请填写密码" bindinput="bindpass"/>
+    </view>
+    <view style="overflow:hidden">
+        <view class="res-title" bindtap="register">注册</view>
+    </view>
+    <view class="btn btn-green" bindtap="login">登录</view>
+    <view class="line"><view class="line-title">OR</view></view>
+    <view class="btn btn-gray" bindtap="checkLogin">{{!loginCode ? '验证码登录' : '密码登录'}}</view>
+</view>

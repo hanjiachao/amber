@@ -1,0 +1,3 @@
+<view>
+    <camera device-position="back" flash="off" bindscancode="scanCode" style="width: 100%;height: 100vh;"></camera>
+</view>

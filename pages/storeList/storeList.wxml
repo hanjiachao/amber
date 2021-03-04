@@ -1,0 +1,30 @@
+<view wx:if="{{show}}">
+    <view class="bg-gray"></view>
+    <view class="content-box">
+       <view wx:if="{{list.length > 0}}">
+           <view wx:if="{{goodNum == 0}}">
+               <view class="store-list" wx:for="{{list}}" wx:for-item="item" wx:for-index="index" bindtap="storeDetail" data-id="{{item.go_id}}">
+                   <image src="{{item.go_image}}" class="fl"></image>
+                   <view class="store-r">
+                       <view class="store-title">{{item.go_name}}</view>
+                       <view class="store-brief">{{item.go_content}}</view>
+                       <view class="store-price"><view class="fr">{{item.go_number}}次</view><view class="fr">¥{{item.go_price}}</view></view>
+                   </view>
+               </view>
+           </view>
+           <view wx:else>
+               <view class="store-li" wx:for="{{list}}" wx:for-item="itemStore" wx:for-index="indexStore" bindtap="start" data-id="{{itemStore.de_id}}" data-status="{{itemStore.status}}" data-ios="{{itemStore.de_apple_number}}" data-android="{{itemStore.de_device_number}}">
+                   <view class="fr btn" wx:if="{{itemStore.status == '未使用'}}">{{isExper == '否' ? '开始' : '试用'}}</view>
+                   <view class="fr btn btn-send" wx:if="{{itemStore.status == '使用中'}}">{{itemStore.countDownText}}</view>
+                   <view class="store-ri">
+                       <view class="store-title">{{itemStore.de_name}}</view>
+                       <view class="store-brief">蓝牙编号:{{isIos ? itemStore.de_apple_number : itemStore.de_device_number}}</view>
+                   </view>
+               </view>
+           </view>
+       </view>
+        <view class="notext" wx:else>
+            暂无结果~
+        </view>
+    </view>
+</view>

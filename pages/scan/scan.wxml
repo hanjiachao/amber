@@ -1,0 +1,18 @@
+<view class="bg-gray"></view>
+<view class="pos-img"><image src="../../image/bg04.png" mode="widthFix"></image></view>
+<view class="content-box">
+    <view class="scan-title">
+        <view class="scan-name">扫码</view>
+        <view class="scan-name1">绑定专属门店</view>
+    </view>
+    <view class="scan-img" bindtap="scan">
+        <image src="../../image/icon12.png"></image>
+    </view>
+    <view class="scan-welcome">
+        <view class="scan-w">欢迎您使用</view>
+        <view class="scan-w"> Amber 健康管理系统</view>
+    </view>
+    <view class="scan-mile">
+        扫描当前门店二维码后即可显示该门店名称及地址，从而购买当前门店产品
+    </view>
+</view>

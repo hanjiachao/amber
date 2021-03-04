@@ -1,0 +1,46 @@
+<view>
+    <view class="content-box">
+        <view class="record-img"><image src="../../image/bg03.png"></image></view>
+        <view class="record" style="position: relative">
+            <view class="record-num">
+                <view class="fl">{{oneNumber}}</view>
+                <view class="fl">{{twoNumber}}</view>
+            </view>
+            <view class="record-title">剩余次数</view>
+        </view>
+        <view class="record-f">
+            <view class="fl {{nav == 0 ? 'active' : ''}}}" bindtap="record">购买记录</view>
+            <view class="fl {{nav == 1 ? 'active' : ''}}}" bindtap="getbill">使用流水</view>
+        </view>
+        <view class="box-shaw">
+          <view wx:if="{{nav == 0}}">
+              <view wx:if="{{recordList.length > 0}}">
+                  <view class="record-box" wx:for="{{recordList}}" wx:for-item="item" wx:for-index="index">
+                      <view>
+                          <view class="fr red">¥{{item.or_pay_price}}</view>
+                          {{item.go_name}}
+                      </view>
+                      <view class="time">{{item.or_add_time}}</view>
+                  </view>
+              </view>
+              <view class="notext" wx:else>
+                    暂无记录~
+              </view>
+          </view>
+            <view wx:else>
+                <view wx:if="{{billList.length > 0}}">
+                    <view class="record-box" wx:for="{{billList}}" wx:for-item="itemBill" wx:for-index="billIndex">
+                        <view>
+                            <view class="fr red">{{itemBill.bi_number}}次</view>
+                            {{itemBill.de_name}}
+                        </view>
+                        <view class="time">{{itemBill.bi_add_time}}</view>
+                    </view>
+                </view>
+                <view class="notext" wx:else>
+                    暂无记录~
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

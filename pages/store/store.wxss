@@ -1,0 +1,45 @@
+.bg-gray{
+    background: #EAECF3;
+    position: fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+.content-box{
+    position: relative;
+    margin: 15px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.store-list>image{
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+}
+.store-r{
+    margin-left: 132px;
+    color: #808080;
+    font-size: 14px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.store-title{
+    font-size: 20px;
+    color: #242424;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.store-img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    z-index:1
+}

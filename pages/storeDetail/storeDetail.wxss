@@ -1,0 +1,47 @@
+.bg-gray{
+    background: #EAECF3;
+    position: fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+.content-box{
+    position: relative;
+    margin: 15px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.box-detail{
+    background: #fff;
+    padding: 15px;
+}
+
+.box-detail image{
+    width: 100%;
+    overflow: hidden;
+}
+.box-p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.store-btn{
+    padding: 12px 15px;
+    color: #fff;
+    background: #1B6FE1;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.store-btn>.fl{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 1px;
+    margin-right: 8px;
+    line-height: 24px;
+}

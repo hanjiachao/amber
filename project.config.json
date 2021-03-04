@@ -1,0 +1,127 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.13.0",
+  "appid": "wxbafc6526153801f0",
+  "projectname": "%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BB%A3%E7%A0%81",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "首页",
+          "pathName": "pages/scanResult/scanResult",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "pages/storeList/storeList",
+          "pathName": "pages/storeList/storeList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/scanEquip/scanEquip",
+          "pathName": "pages/scanEquip/scanEquip",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/scanResult/scanResult",
+          "pathName": "pages/scanResult/scanResult",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "扫码",
+          "pathName": "pages/scan/scan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "pages/storeDetail/storeDetail",
+          "pathName": "pages/storeDetail/storeDetail",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "扫小程序码",
+          "pathName": "pages/login/login",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "isExper",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/scan/scan",
+          "pathName": "pages/scan/scan",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.logo-img{
+  width: 100%;
+}
+.logo-img image{
+  width: 100%;
+}
+.content-box{
+  margin: 0px 15px;
+  padding-bottom: 20px;
+}
+.logo-title{
+  font-size: 20px;
+  margin-top: -40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.box-input{
+  line-height: 40px;
+  border-bottom: 1px solid #CACACA;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  height: 40px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.box-input>.fl{
+  width: 17px;
+  height: 19px;
+  margin-top: 10px;
+  float: left;
+}
+.box-input>.fr{
+  width: 23px;
+  height: 20px;
+  margin-top: 17px;
+  float: right;
+}
+.input-text1{
+  width: calc(100% - 40px);
+  margin-left: 15px;
+  outline: none;
+  padding: 10px;
+}
+.input-text2{
+  width: calc(100% - 65px);
+  margin-left: 15px;
+  outline: none;
+  padding: 10px;
+}
+.input-text3{
+  width: calc(100% - 150px);
+  margin-left: 15px;
+  outline: none;
+  padding: 10px;
+}
+.btn{
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 16px;
+}
+.btn-green{
+  background: #1B6FE1;
+  box-shadow: 0px 5px 30px 1px rgba(0, 105, 247, 0.4);
+  border-radius: 28px;
+}
+.btn-gray{
+  background: #EAECF3;
+  border: 1px solid #FFFFFF;
+  border-radius: 28px;
+  color: #C4C6CC;
+  margin-bottom: 20px;
+}
+.line{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 4px;
+}
+.line:after{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 1px;
+  background: rgba(196,198,204,0.35);
+  content: '';
+  top: 10px;
+}
+.line-title{
+  z-index:2;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: #fff;
+  text-align: center;
+  line-height: 20px;
+  left: 50%;
+  margin-left: -20px;
+  color: #C4C6CC;
+  font-size: 16px;
+}
+.code-btn{
+  width: 92px;
+  height: 26px;
+  background: #1B6FE1;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 26px;
+  float: right;
+  text-align: center;
+  margin-top: 10px;
+}
+.gray{
+  background-color: #787777;
+}
+.res-title{
+  float:right;
+  color:#1B6FE1;
+  font-size: 14px;
+}

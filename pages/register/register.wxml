@@ -1,0 +1,25 @@
+<view class="logo-img">
+    <image src="../../image/bg02.png" mode="widthFix"></image>
+</view>
+<view class="content-box">
+    <view class="logo-title">注册</view>
+    <view class="box-input">
+        <image src="../../image/icon01.png" class="fl"></image>
+        <input type="number" class="input-text1" placeholder="请输入手机号码" bindinput="bindmobile"/>
+    </view>
+    <view class="box-input">
+        <image src="../../image/icon05.png" class="fl"></image>
+        <view bindtap="send" class="code-btn {{time == 60 ? '' : 'gray'}}">{{time == 60 ? '发送验证码' : time+'s后重发'}}</view>
+        <input type="number" class="input-text3" placeholder="请输入短信验证码" bindinput="bindcode"/>
+    </view>
+    <view class="box-input">
+        <image src="../../image/icon02.png" class="fl"></image>
+        <image src="../../image/icon03.png" class="fr" wx:if="{{status}}" bindtap="statusClick"></image>
+        <image src="../../image/icon04.png" class="fr" bindtap="statusClick"  wx:else></image>
+        <input type="{{status ? 'number' : 'password'}}" class="input-text2" placeholder="设置登录密码" bindinput="passnumber"/>
+    </view>
+    <view style="overflow:hidden">
+        <view class="res-title" bindtap="login">登录</view>
+    </view>
+    <view class="btn btn-green" bindtap="bind">确认</view>
+</view>

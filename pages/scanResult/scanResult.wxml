@@ -1,0 +1,15 @@
+<view wx:if="{{show}}">
+    <view class="bg-gray"></view>
+    <view class="content-box">
+        <view class="store-list">
+            <image src="{{list.st_image}}" class="fl"></image>
+            <view class="store-r">
+                <view class="store-title">{{list.st_name}}</view>
+                <view class="store-brief">门店地址：{{list.st_address}}</view>
+            </view>
+        </view>
+        <view class="pos-btn">
+            <view class="btn btn-green" bindtap="bindStore">绑定店铺</view>
+        </view>
+    </view>
+</view>
